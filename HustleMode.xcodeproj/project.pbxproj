@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2286BE731F156B1300043F7E /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2286BE721F156B1300043F7E /* hustle-on.wav */; };
 		22FC4B881F1546D00028E08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC4B871F1546D00028E08B /* AppDelegate.swift */; };
 		22FC4B8A1F1546D00028E08B /* HustleModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC4B891F1546D00028E08B /* HustleModeVC.swift */; };
 		22FC4B8D1F1546D00028E08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FC4B8B1F1546D00028E08B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2286BE721F156B1300043F7E /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hustle-on.wav"; path = "../../../../../Downloads/hustle-mode/hustle-mode/hustle-on.wav"; sourceTree = "<group>"; };
 		22FC4B841F1546D00028E08B /* HustleMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HustleMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FC4B871F1546D00028E08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FC4B891F1546D00028E08B /* HustleModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HustleModeVC.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		22FC4B861F1546D00028E08B /* HustleMode */ = {
 			isa = PBXGroup;
 			children = (
+				2286BE721F156B1300043F7E /* hustle-on.wav */,
 				22FC4B871F1546D00028E08B /* AppDelegate.swift */,
 				22FC4B891F1546D00028E08B /* HustleModeVC.swift */,
 				22FC4B8B1F1546D00028E08B /* Main.storyboard */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2286BE731F156B1300043F7E /* hustle-on.wav in Resources */,
 				22FC4B921F1546D00028E08B /* LaunchScreen.storyboard in Resources */,
 				22FC4B8F1F1546D00028E08B /* Assets.xcassets in Resources */,
 				22FC4B8D1F1546D00028E08B /* Main.storyboard in Resources */,
@@ -312,6 +316,7 @@
 				22FC4B981F1546D00028E08B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
