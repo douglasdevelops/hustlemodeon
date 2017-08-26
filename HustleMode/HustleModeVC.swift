@@ -11,6 +11,7 @@ import AVFoundation
 
 class HustleModeVC: UIViewController {
     
+    //MARK: IBOutLets
     @IBOutlet weak var imgBackGroundDarkBlue: UIImageView!
     @IBOutlet weak var vwCloudHolder: UIView!
     @IBOutlet weak var btnPowerUp: UIButton!
@@ -18,26 +19,28 @@ class HustleModeVC: UIViewController {
     @IBOutlet weak var lblHustleMode: UILabel!
     @IBOutlet weak var lblOn: UILabel!
     
+    //MARK: Module Level Variables
     var Player: AVAudioPlayer!
     
+    //MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
+        SetupInitialUIState()
+        PrepareRocketShipSoundToPlay()
+    }
+    
+    //MARK: User Functions
+    func SetupInitialUIState() {
         vwCloudHolder.isHidden = true
         btnPowerUp.isUserInteractionEnabled = true
-
-        
         lblHustleMode.alpha = 0.0
         lblOn.alpha = 0.0
         vwCloudHolder.alpha = 0.0
-        
         lblHustleMode.isHidden = false
         lblOn.isHidden = false
-        
-        
+    }
+    
+    func PrepareRocketShipSoundToPlay() {
         let Path = Bundle.main.path(forResource: "hustle-on", ofType: ".wav")!
         let url = URL(fileURLWithPath: Path)
         
@@ -47,11 +50,9 @@ class HustleModeVC: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
-        
     }
     
-    
-
+    //MARK: IBActions
     @IBAction func btnPowerUp_Tapped(_ sender: Any) {
         
         UIView.animate(withDuration: 0.2, animations: {
@@ -70,7 +71,6 @@ class HustleModeVC: UIViewController {
                     }, completion: { (complete) in
                         UIView.animate(withDuration: 0.5, animations: {
                             self.lblHustleMode.alpha = 1.0
-                            //self.lblHustleMode.animate(newText: self.lblHustleMode.text ?? "May the source be with you", characterDelay: 0.2, completion: )
                             self.lblHustleMode.animate(newText: self.lblHustleMode.text ?? "May the source be with you", characterDelay: 0.1, completion: { (finished, error) in
                                 UIView.animate(withDuration: 1.5, animations: {
                                     self.lblOn.alpha = 1.0
@@ -86,20 +86,19 @@ class HustleModeVC: UIViewController {
     }
 }
 
+//MARK: Extensions
 extension UILabel {
     func animate(newText: String, characterDelay: TimeInterval, completion: @escaping (Bool, Error?) -> Void) {
         
         DispatchQueue.main.async {
-            
+
             self.text = ""
             
             for (index, character) in newText.characters.enumerated() {
                 DispatchQueue.main.asyncAfter(deadline: .now() + characterDelay * Double(index)) {
                     self.text?.append(character)
                 }
-                
             }
-            
             completion(true,nil)
         }
     }

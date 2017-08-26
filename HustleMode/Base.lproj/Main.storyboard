@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,7 +41,7 @@
                                         <rect key="frame" x="-1" y="190" width="414" height="477"/>
                                     </imageView>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUSTLE MODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxq-YG-HZj">
-                                        <rect key="frame" x="66" y="376" width="234" height="47"/>
+                                        <rect key="frame" x="66" y="376" width="243" height="47"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="uQy-hH-PBP"/>
                                         </constraints>
@@ -50,10 +50,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRv-nx-sPF">
-                                        <rect key="frame" x="117" y="431" width="107" height="57"/>
+                                        <rect key="frame" x="117" y="431" width="141" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="QSd-i4-s0V"/>
-                                            <constraint firstAttribute="width" constant="107" id="vu2-IZ-vcK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="72"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -62,7 +61,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.52156862745098043" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Kxq-YG-HZj" secondAttribute="trailing" constant="75" id="1ao-8v-cnq"/>
                                     <constraint firstItem="XXt-Gm-sRS" firstAttribute="leading" secondItem="rO0-pY-Vee" secondAttribute="leading" constant="-1" id="PhC-9r-kUs"/>
                                     <constraint firstItem="Kxq-YG-HZj" firstAttribute="centerX" secondItem="rO0-pY-Vee" secondAttribute="centerX" id="b17-B3-5Ta"/>
                                     <constraint firstItem="wRv-nx-sPF" firstAttribute="top" secondItem="Kxq-YG-HZj" secondAttribute="bottom" constant="8" symbolic="YES" id="eKe-qH-Vha"/>
